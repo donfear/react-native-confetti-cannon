@@ -24,8 +24,8 @@ type Props = {|
 
 class Confetti extends React.PureComponent<Props> {
   props: Props;
-  width: number = randomValue(8, 16);
-  height: number = randomValue(6, 12);
+  width: number = 0;
+  height: number = 0;
   isRounded: boolean = Math.round(randomValue(0, 1)) === 1;
 
   render() {
